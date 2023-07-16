@@ -1,4 +1,3 @@
-```python
 import random
 import pygame
 import RPi.GPIO as GPIO
@@ -181,4 +180,3 @@ while True:
     pygame.display.update()
 
     pygame.time.wait(10)
-```
