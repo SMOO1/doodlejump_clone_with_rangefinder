@@ -1,4 +1,4 @@
-This is a game similar to "Doodlejum" that i made with python on my raspberry pi, the user controls the game character horizontally by moving their hand left to right of an ultrasonic rangefinder. As the character gains altitude, platforms and jump boosters generate.    
+This is a game similar to "Doodlejump" that i made with python on my raspberry pi, the user controls the game character horizontally by moving their hand left to right of an ultrasonic rangefinder. As the character gains altitude, platforms and jump boosters generate. The rangefinder and altidude values are displayed at the top of the game window. 
 
 resources used:
 - breadboard
