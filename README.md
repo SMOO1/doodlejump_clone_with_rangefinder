@@ -5,4 +5,6 @@ resources used:
 - raspberry pi with an extention cord 
 - 6 wires
 - ultrasonic rangefinder
+
+(used a gif because of file size limits for free accounts)
 ![IMG_7853_AdobeExpress](https://github.com/SMOO1/doodlejump_rangefinder/assets/132080200/50b6b5c9-4060-4125-8be5-5dd23b5964f3)
