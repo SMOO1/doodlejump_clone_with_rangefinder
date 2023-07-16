@@ -93,7 +93,7 @@ while True:
 
         # change character position based on the rangefinder vlaue
     if distance < win_size[0]:
-        if distance <= 25:
+        if distance <= 15:
             char_vel[0] = 1  #move left
         else:
             char_vel[0] = -1  #move right
