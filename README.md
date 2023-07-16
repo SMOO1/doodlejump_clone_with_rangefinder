@@ -8,7 +8,5 @@ resources used:
 
 (2x speed due to file size limits for free accounts)
 
-https://github.com/SMOO1/doodlejump_rangefinder/assets/132080200/10293ed6-8939-478f-afca-0c5ffd074dab
-
-
+https://github.com/SMOO1/doodlejump_rangefinder/assets/132080200/46fde5e3-95b8-457e-805a-650ee772df44
 
