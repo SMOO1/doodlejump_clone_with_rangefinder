@@ -13,7 +13,7 @@ screen = pygame.display.set_mode(win_size)
 char_pos = [win_size[0] / 2, win_size[1] / 2]
 char_vel = [0, 0]
 char_size = 30
-char_color = (255, 255, 255)
+char_color = (255, 255,255)
 char_jump_height = 10
 char_max_jump = False
 
@@ -85,7 +85,7 @@ while True:
     while GPIO.input(ECHO_PIN) == 0:
         pulse_start = time.time()
 
-    while GPIO.input(ECHO_PIN) == 1:
+    while GPIO.input(ECHO_PIN) ==1:
         pulse_end = time.time()
 
     pulse_duration = pulse_end - pulse_start
@@ -140,7 +140,7 @@ while True:
 
     # create new platforms/jump boosters if the player's altitude is greater than the threshold
     if altitude >= platform_generate_threshold:
-        platform_x = random.randint(0, win_size[0] - platform_width)
+        platform_x = random.randint(0, win_size[0]- platform_width)
         platform_y = platforms[0].top - platform_gap - random.randint(platform_min_height, platform_max_height)
         platforms.insert(0, pygame.Rect(platform_x, platform_y, platform_width, platform_height))
 
@@ -170,12 +170,11 @@ while True:
     for booster in jump_boosters:
         pygame.draw.rect(screen, jump_booster_color, booster)
 
-    pygame.draw.rect(screen, char_color,
-                     pygame.Rect(char_pos[0] - char_size / 2, char_pos[1] - char_size / 2, char_size, char_size))
+    pygame.draw.rect(screen, char_color,pygame.Rect(char_pos[0] - char_size / 2, char_pos[1] - char_size / 2, char_size, char_size))
 
     altitude_text = altitude_font.render("Altitude: " + str(altitude), True, (255, 255, 255))
     screen.blit(altitude_text, (win_size[0] - altitude_text.get_width() - 10, 10))
-    range_text = range_font.render("Range: " + str(distance), True, (255, 255, 255))
+    range_text = range_font.render("Range: " +str(distance), True, (255, 255, 255))
     screen.blit(range_text, (10, 10))
     pygame.display.update()
 
